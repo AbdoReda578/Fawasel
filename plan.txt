@@ -1,0 +1,135 @@
+تمام، هنقسم الصفحات ونحدد تخطيط الموقع مع إنشاء الناف بار والفوتر.  
+
+### **📌 تقسيم الصفحات**  
+🔹 **الرئيسية (index.html)**  
+- من نحن  
+- عملاؤنا  
+- شهادات التسجيل الضريبي  
+
+🔹 **صفحات منفصلة**  
+- أهدافنا (goals.html)  
+- قيمنا (values.html)  
+- الهيكل التنظيمي (structure.html)  
+- خدماتنا (services.html)  
+- مشروعاتنا المنفذة (projects.html)  
+- أعمال الإلكتروميكانيكال (electromechanical.html)  
+
+🔹 **الفوتر في كل الصفحات**  
+
+---
+
+### **📌 إنشاء الناف بار (Navbar)**
+هيحتوي على روابط لكل الصفحات الأساسية.  
+
+#### **🔹 HTML: navbar.html**
+```html
+<nav>
+  <ul>
+    <li><a href="index.html">الرئيسية</a></li>
+    <li><a href="goals.html">أهدافنا</a></li>
+    <li><a href="values.html">قيمنا</a></li>
+    <li><a href="structure.html">الهيكل التنظيمي</a></li>
+    <li><a href="services.html">خدماتنا</a></li>
+    <li><a href="projects.html">مشروعاتنا المنفذة</a></li>
+    <li><a href="electromechanical.html">أعمال الإلكتروميكانيكال</a></li>
+  </ul>
+</nav>
+```
+
+#### **🔹 CSS: styles.css**
+```css
+nav {
+  background-color: var(--dark-color);
+  padding: 10px;
+  text-align: center;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline;
+  margin: 0 15px;
+}
+
+nav ul li a {
+  color: var(--light-beige);
+  text-decoration: none;
+  font-family: 'ArabicFont', sans-serif;
+  font-size: 18px;
+}
+```
+
+---
+
+### **📌 إنشاء الفوتر (Footer)**
+#### **🔹 HTML: footer.html**
+```html
+<footer>
+  <p>جميع الحقوق محفوظة &copy; 2025 | فواصل</p>
+</footer>
+```
+
+#### **🔹 CSS**
+```css
+footer {
+  background-color: var(--dark-color);
+  color: var(--light-beige);
+  text-align: center;
+  padding: 10px 0;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
+```
+
+---
+
+### **📌 الصفحة الرئيسية (index.html)**
+```html
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>فواصل | الرئيسية</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <!-- الناف بار -->
+  <header>
+    <div id="navbar"></div>
+  </header>
+
+  <!-- المحتوى -->
+  <section>
+    <h1>من نحن</h1>
+    <p>نحن شركة ...</p>
+
+    <h2>عملاؤنا</h2>
+    <p>قائمة بأهم عملائنا ...</p>
+
+    <h2>شهادات التسجيل الضريبي</h2>
+    <p>معلومات عن الشهادات ...</p>
+  </section>
+
+  <!-- الفوتر -->
+  <footer id="footer"></footer>
+
+  <script>
+    // تحميل الناف بار والفوتر تلقائيًا
+    document.getElementById("navbar").innerHTML = '<object type="text/html" data="navbar.html"></object>';
+    document.getElementById("footer").innerHTML = '<object type="text/html" data="footer.html"></object>';
+  </script>
+
+</body>
+</html>
+```
+
+---
+
+📌 كده الموقع متقسم، والناف بار والفوتر جاهزين.  
+هل تحب نضيف أي إضافات تانية؟ 🚀

@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="ar">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>خدماتنا</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="./css/styles.css">
+</head>
+
+<body>
+
+  <!-- Navigation Bar -->
+  <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #192623;">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">
+        <img class="logo-section" src="./images/Logo.png" alt="Logo" width="200">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="index.html">الرئيسية</a></li>
+          <li class="nav-item"><a class="nav-link" href="goals.html">أهدافنا</a></li>
+          <li class="nav-item"><a class="nav-link" href="structure.html">الهيكل التنظيمي</a></li>
+          <li class="nav-item"><a class="nav-link" href="services.html">خدماتنا</a></li>
+          <li class="nav-item"><a class="nav-link" href="electromechanical.html">الإلكتروميكانيكال</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Roadmap Section -->
+  <div class="container mt-5 text-center fade-in">
+    <h2 class="text-center section-title">خدماتنا</h2>
+    <div class="timeline">
+      <div class="timeline-item fade-in">
+        <h5>1 الخدمه</h5>
+        <p>أعمال تشطيبات المعارض التجارية والمكاتب الادارية وتشمل</p>
+      </div>
+      <div class="timeline-item fade-in">
+        <h5>2 الخدمه</h5>
+        <p>التصنيع و التوريدات.</p>
+      </div>
+      <div class="timeline-item fade-in">
+        <h5>3 الخدمه</h5>
+        <p>الصيانات الدورية.</p>
+      </div>
+    </div>
+  </div>
+
+<br>
+
+<h2 class="text-center section-title">اعمالنا</h2>
+<br>
+
+
+  <div id="imageSlider" class="slider-container fade-in">
+    <div class="slider">
+      <div class="slide"><img src="./images/p1 (1).png" alt="Slide 1"></div>
+      <div class="slide"><img src="./images/p1 (2).png" alt="Slide 2"></div>
+      <div class="slide"><img src="./images/p1 (3).png" alt="Slide 3"></div>
+      <div class="slide"><img src="./images/p1 (4).png" alt="Slide 3"></div>
+      <div class="slide"><img src="./images/p1 (5).png" alt="Slide 3"></div>
+      <div class="slide"><img src="./images/p1 (6).png" alt="Slide 3"></div>
+      <div class="slide"><img src="./images/p1 (7).png" alt="Slide 3"></div>
+      <div class="slide"><img src="./images/p1 (8).png" alt="Slide 3"></div>
+      <div class="slide"><img src="./images/p1 (9).png" alt="Slide 3"></div>
+      <div class="slide"><img src="./images/p1 (10).png" alt="Slide 3"></div>
+      <div class="slide"><img src="./images/p1 (11).png" alt="Slide 3"></div>
+      <div class="slide"><img src="./images/p1 (12).png" alt="Slide 3"></div>
+      <div class="slide"><img src="./images/p1 (13).png" alt="Slide 3"></div>
+      <div class="slide"><img src="./images/p1 (14).png" alt="Slide 3"></div>
+      <div class="slide"><img src="./images/p1 (15).png" alt="Slide 3"></div>
+      <div class="slide"><img src="./images/p1 (16).png" alt="Slide 3"></div>
+    </div>
+    <button class="prev" onclick="moveSlide(-1)">&#10094;</button>
+    <button class="next" onclick="moveSlide(1)">&#10095;</button>
+  </div>
+  
+  <style>
+    .slider-container {
+      position: relative;
+      max-width: 800px;
+      margin: auto;
+      overflow: hidden;
+      border-radius: 10px;
+      box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+      background: var(--dark-color);
+    }
+  
+    .slider {
+      display: flex;
+      transition: transform 0.5s ease-in-out;
+    }
+  
+    .slide {
+      min-width: 100%;
+      overflow: hidden;
+    }
+  
+    .slide img {
+      width: 100%;
+      height: 400px; /* تثبيت الارتفاع */
+      object-fit: cover; /* ضبط الصورة داخل الإطار بدون تفاوت */
+    }
+  
+    .prev, .next {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      background-color: rgba(0, 0, 0, 0.5);
+      color: white;
+      border: none;
+      padding: 10px;
+      cursor: pointer;
+      border-radius: 50%;
+    }
+  
+    .prev { left: 10px; }
+    .next { right: 10px; }
+  
+    .prev:hover, .next:hover {
+      background-color: rgba(0, 0, 0, 0.8);
+    }
+  </style>
+  
+  <script>
+    let slideIndex = 0;
+    const slides = document.querySelectorAll(".slide");
+  
+    function moveSlide(step) {
+      slideIndex += step;
+      if (slideIndex >= slides.length) slideIndex = 0;
+      if (slideIndex < 0) slideIndex = slides.length - 1;
+      document.querySelector(".slider").style.transform = `translateX(${-slideIndex * 100}%)`;
+    }
+  </script>
+  
+
+  <!-- Footer -->
+  <footer class="footer fade-in mt-5">
+    <div class="overlay"></div>
+    <div class="footer-container">
+      <div class="logo-section">
+        <img src="./images/WLOGO.png" alt="Fawasil Advanced Contracting EST Logo">
+      </div>
+      <div class="contact-info">
+        <h3>تواصل معنا</h3>
+        <p><i class="fas fa-map-marker-alt"></i> مكة المكرمة - حي الشرائع - ص.ب:24432</p>
+        <p><i class="fas fa-phone"></i> 0592478182 - 0565362538 - 0561806831</p>
+        <p><i class="fas fa-envelope"></i> <a href="mailto:fawasil.manager@gmail.com">fawasil.manager@gmail.com</a></p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- AOS Library -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+
+  <!-- GSAP Library -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+
+  <!-- JavaScript for Animations -->
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const fadeElements = document.querySelectorAll(".fade-in");
+      const observer = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("show");
+          }
+        });
+      }, { threshold: 0.2 });
+
+      fadeElements.forEach(el => observer.observe(el));
+    });
+  </script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

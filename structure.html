@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="ar">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>الهيكل التنظيمي</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+
+  <!-- Navigation Bar -->
+  <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #192623;">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">
+        <img class="logo-section" src="./images/Logo.png" alt="Logo" width="200">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="index.html">الرئيسية</a></li>
+          <li class="nav-item"><a class="nav-link" href="goals.html">أهدافنا</a></li>
+          <li class="nav-item"><a class="nav-link" href="structure.html">الهيكل التنظيمي</a></li>
+          <li class="nav-item"><a class="nav-link" href="services.html">خدماتنا</a></li>
+          <li class="nav-item"><a class="nav-link" href="electromechanical.html">الإلكتروميكانيكال</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Organizational Structure Section -->
+  <section class="organizational-structure py-5">
+    <div class="container">
+      <h2 class="text-center section-title mb-4" style="color: var(--dark-color);">الهيكل التنظيمي</h2>
+      <div class="org-chart">
+
+        <div class="box">المدير العام</div>
+
+        <!-- Level 2 -->
+        <div class="level d-flex justify-content-center">
+            <div class="connector"></div>
+          <div class="box">مدير المشروعات</div>
+        </div>
+
+        <!-- Level 3 -->
+        <div class="level d-flex justify-content-center">
+          <div class="box">مهندس ميكانيكا</div>
+          <div class="connector horizontal"></div>
+          <div class="box">مهندس مدني</div>
+          <div class="connector horizontal"></div>
+          <div class="box">مهندس كهرباء</div>
+          <div class="connector horizontal"></div>
+          <div class="box">مهندس معماري</div>
+          <div class="connector horizontal"></div>
+          <div class="box">محاسب</div>
+          <div class="connector horizontal"></div>
+          <div class="box">المكتب الفني و التصميمات</div>
+        </div>
+
+        <div class="level d-flex justify-content-center">
+          <div class="box">مشرفين</div>
+          <div class="connector horizontal"></div>
+          <div class="box">مشرفين</div>
+        </div>
+
+        <div class="level d-flex justify-content-center">
+            <div class="box">فنيين</div>
+            <div class="connector horizontal"></div>
+            <div class="box">فنيين</div>
+          </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer fade-in">
+    <div class="overlay"></div>
+    <div class="footer-container">
+      <div class="logo-section">
+        <img src="./images/WLOGO.png" alt="Fawasil Advanced Contracting EST Logo">
+      </div>
+      <div class="contact-info">
+        <h2 class="text-center section-title" style="color: white;">Contact Us</h2>
+        <p><i class="fas fa-map-marker-alt"></i> مكة المكرمة - حي الشرائع - ص.ب:24432</p>
+        <p><i class="fas fa-phone"></i> 0592478182 - 0565362538 - 0561806831</p>
+        <p><i class="fas fa-envelope"></i> <a href="mailto:fawasil.manager@gmail.com">fawasil.manager@gmail.com</a></p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
